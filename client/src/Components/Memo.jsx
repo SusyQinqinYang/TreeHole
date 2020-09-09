@@ -17,8 +17,8 @@ let Memo = () => {
           });
     }
   return (
-    <div>
-      <button onClick={getMemo}>Here is what you have told me</button>
+    <div style={{"marginTop": "20px"}}>
+      <button onClick={getMemo}>What you have told me</button>
       <div>{memo}</div>
     </div>
   );
