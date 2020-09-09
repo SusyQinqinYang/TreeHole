@@ -14,11 +14,11 @@ import {
 const App = (props) => {
   return (
     <Router>
-      <div>
+      <div style={{ "text-align": "center"}}>
         <div className="Header">
-          <h1 className="page-title">Tree Hole </h1>
-          <div className="nav">
-            <NavLink to="/" className="nav-home">
+          <h1 className="page-title" style={{"paddingTop": "100px"}}>Tree Hole </h1>
+          <div className="nav" style={{"paddingBottom": "20px"}}>
+            <NavLink to="/" className="nav-home" style={{"paddingRight": "20px"}}>
               Home
             </NavLink>
             <NavLink to="/memo" className="nav-memo">

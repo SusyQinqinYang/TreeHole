@@ -21,7 +21,6 @@ let Home = ({ newWords, addNewWords }) => {
             }
         })
         .then((result) => {
-            console.log('result after post',result);
             alert('Thank you for telling me your mind!')
         })
         .catch((err) => {
@@ -32,14 +31,14 @@ let Home = ({ newWords, addNewWords }) => {
 
   return (
     <div>
-      <form className="word-form" onSubmit={handleSubmit}>
+      <form className="word-form" onSubmit={handleSubmit} style={{"marginTop": "20px"}}>
         <input
           type="text"
           placeholder="Anything in mind?"
           className="text-input"
           onChange={(e) => setWord(e.target.value)}
         />
-        <input type="submit" value="Tell me" />
+        <input type="submit" value="Tell me" style={{"marginLeft": "5px"}}/>
       </form>
     </div>
   );
