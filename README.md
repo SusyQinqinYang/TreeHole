@@ -47,4 +47,3 @@ This can be deployed using AWS.
 ## Authors
 
 - **Susy(Qinqin) Yang**
-- ![](https://recordit.co/ThwLL31DgB)
