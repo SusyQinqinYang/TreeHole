@@ -2,8 +2,8 @@ import React from "react";
 import HomeContainer from "../containers/homeNewWordsContainer";
 import Memo from "./Memo.jsx"
 import {
-  HashRouter as Router,
-  //   BrowserRouter as Router,
+  // HashRouter as Router,
+  BrowserRouter as Router,
   Switch,
   Route,
   NavLink,
