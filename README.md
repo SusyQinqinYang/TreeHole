@@ -47,4 +47,4 @@ This can be deployed using AWS.
 ## Authors
 
 - **Susy(Qinqin) Yang**
-- ![Watch the demo video](https://recordit.co/xiszvi4MqS)
+- ![](https://recordit.co/ThwLL31DgB)
