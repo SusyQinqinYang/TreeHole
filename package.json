@@ -4,13 +4,36 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest --verbose",
     "build:dev": "webpack -d --watch",
     "start": "node server/index.js",
     "start:dev": "nodemon server/index.js -w server"
   },
+  "jest": {
+    "testMatch": [
+      "**/tests/**/*.[jt]s?(x)",
+      "**/?(*.)+(spec|test).[jt]s?(x)",
+      "**/?(*.)+(spec|test).[jt]s?(x)"
+    ],
+    "setupFilesAfterEnv": [
+      "<rootDir>jest.setup.js"
+    ],
+    "moduleNameMapper": {
+      "\\.(css|less)$": "<rootDir>styleMock.js"
+    },
+    "preset": "jest-puppeteer",
+    "testEnvironment": "jsdom"
+  },
   "devDependencies": {
-    "nodemon": "^2.0.3"
+    "nodemon": "^2.0.3",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
+    "jest": "^26.0.1",
+    "jest-puppeteer": "^4.4.0",
+    "jsdom": "16.2.2",
+    "jsdom-global": "3.0.2",
+    "puppeteer": "^3.0.4",
+    "redux-mock-store": "^1.5.4"
   },
   "dependencies": {
     "@babel/core": "^7.4.0",
